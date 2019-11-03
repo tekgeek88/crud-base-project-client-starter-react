@@ -8,7 +8,6 @@ This app follows basic CRUD principles, doesn't implement the actual streaming i
 
 ## Installation
 
-
 * To to use this web-app first start by making sure you have Node.js installed.
 
 * Using `npm -i` install the dependencies required in both the client and server directories
@@ -21,7 +20,7 @@ This app follows basic CRUD principles, doesn't implement the actual streaming i
 
     .
     ├── client              # This project
-    └── server              # The server to recieve 
+    └── server              # The server to receive 
 > Mak sure to downlaod both projects and use npm start on the server before starting the client
 
 ### Source files
