@@ -1,4 +1,4 @@
-# Streamy - A React.js and react-redux web-app
+# Streamy Client - A React.js and react-redux web-app
 
 ## What it is
 
@@ -8,6 +8,7 @@ This app follows basic CRUD principles, doesn't implement the actual streaming i
 
 ## Installation
 
+
 * To to use this web-app first start by making sure you have Node.js installed.
 
 * Using `npm -i` install the dependencies required in both the client and server directories
@@ -15,6 +16,20 @@ This app follows basic CRUD principles, doesn't implement the actual streaming i
 * using two terminal windows run `npm start` in both the client and server directories
 
 * visit `http://localhost:3000/` in your browser to start the web-app
+
+### A typical top-level directory layout
+
+    .
+    ├── client              # This project
+    └── server              # The server to recieve 
+> Mak sure to downlaod both projects and use npm start on the server before starting the client
+
+### Source files
+
+The actual source files of a software project are usually stored inside the
+`src` folder. Alternatively, you can put them into the `lib` (if you're
+developing a library), or into the `app` folder (if your application's source
+files are not supposed to be compiled).
 
 ## CRUD Operations
 
@@ -44,7 +59,7 @@ The delete operation uses a re-usable modal in order to confirm and issue delete
 
 ## References
 
-If you would like to learn more about how this web-app was developed please visit the Udemy authors website and take his online-class at
+Please visit Stephen Grider's Udemy course to learn more about how this web-app was designed and built.
 
 https://www.udemy.com/share/101WcY/
 
