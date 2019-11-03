@@ -1,68 +1,73 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Streamy - A React.js and react-redux web-app
 
-## Available Scripts
+## What it is
 
-In the project directory, you can run:
+Streamy is a base project for a simple CRUD app that allows users to view live video streams created by other users. When first visiting the site users see a list of viewable streams. If the stream was created by the current user the list gives the user buttons allowing for the stream to either be edited or deleted.
 
-### `npm start`
+This app follows basic CRUD principles, doesn't implement the actual streaming interface, and was created as a project from a Udemy course.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Installation
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+* To to use this web-app first start by making sure you have Node.js installed.
 
-### `npm test`
+* Using `npm -i` install the dependencies required in both the client and server directories
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* using two terminal windows run `npm start` in both the client and server directories
 
-### `npm run build`
+* visit `http://localhost:3000/` in your browser to start the web-app
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## CRUD Operations
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### Read
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The read operation uses the StreamList compoent to fetch a list of all possible streams that can be viewed by a visitor.
 
-### `npm run eject`
+![Image of Read Operation](https://github.com/tekgeek88/project-image-repo/raw/master/crud-base-project-client-starter-react/read.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Create
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The create operation uses the StreamShow component to allow users to click on the hyperlinked title of a stream and view more detailed information for the given stream.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![Image of Create Operation](https://github.com/tekgeek88/project-image-repo/raw/master/crud-base-project-client-starter-react/create.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Update
 
-## Learn More
+The update operation uses the StreamEdit component to fetch and pre-fill a form relating to the given stream. The user is able to edit fields and submit a patch request via the submit button to the backend api in order to update information for the given stream.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Image of Update Operation](https://github.com/tekgeek88/project-image-repo/raw/master/crud-base-project-client-starter-react/update.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Delete
 
-### Code Splitting
+The delete operation uses a re-usable modal in order to confirm and issue delete requests to the backend api in order to delete the given stream.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+![Image of Delete Operation](https://github.com/tekgeek88/project-image-repo/raw/master/crud-base-project-client-starter-react/delete.png)
 
-### Analyzing the Bundle Size
+## References
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+If you would like to learn more about how this web-app was developed please visit the Udemy authors website and take his online-class at
 
-### Making a Progressive Web App
+https://www.udemy.com/share/101WcY/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Licensing
 
-### Advanced Configuration
+Copyright 2019 Carl Argabright
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
 
-### Deployment
+       http://www.apache.org/licenses/LICENSE-2.0
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
 
-### `npm run build` fails to minify
+## Contact
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+If you have any comments or suggestions please feel free to leave them for me on
+GitHub
+
+If you need to say something a little more personal feel free to send me an
+email at carl.argbright@gmail.com
